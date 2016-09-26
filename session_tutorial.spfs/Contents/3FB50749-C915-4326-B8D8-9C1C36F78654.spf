@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>classicmodels</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>kcid</key>
+			<string>-5238422912269949308</string>
+			<key>name</key>
+			<string>David</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>latin1</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDA0VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClpvZmZpY2VDb2Rl0h4f
+			LS5fEA9OU011dGFibGVTdHJpbmejLS8jWE5TU3RyaW5n0h4fMTJe
+			TlNNdXRhYmxlQXJyYXmjMTMjV05TQXJyYXnSHh8iNaIiI18QD05T
+			S2V5ZWRBcmNoaXZlctE4OVRkYXRhgAEACAARABoAIwAtADIANwBF
+			AEsAUgBaAGUAbABwAHIAdAB2AHoAfAB+AIAAggCHAIwAkQC6AMEA
+			wgDDAMUAygDVAN4A9AD4AQUBDgETARUBFwEZAR4BKAEqATUBOgFM
+			AVABWQFeAW0BcQF5AX4BgQGTAZYBmwAAAAAAAAIBAAAAAAAAADoA
+			AAAAAAAAAAAAAAAAAAGd
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {694, 450}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>-- SELECT * FROM  employees WHERE jobTitle = 'SalesRep'
+/* SELECT firstName, lastName, email FROM eployees
+	WHERE jobTitle != 'Sales Rep'
+	AND officeCode = 1 */
+	
+/* 	SELECT DISTINCT(reportsTo) FROM employees */
+
+/* SELECT * FROM employees
+	WHERE lastName LIKE "%b%"
+	AND (officeCode = 1
+	OR officeCode = 3
+	OR officeCode = 5); */</string>
+			<key>table</key>
+			<string>offices</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>200</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>-- SELECT * FROM  employees WHERE jobTitle = 'SalesRep'
+/* SELECT firstName, lastName, email FROM eployees
+	WHERE jobTitle != 'Sales Rep'
+	AND officeCode = 1 */
+	
+	SELECT DISTINCT(reportsTo) FROM employees</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+/* SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA') */
+	
+/* SELECT * FROM products
+	INNER JOIN productlines ON products.productline = productlines.productLine */
+	
+/* SELECT t1.quantityOrdered,t1.priceEach,t2.status FROM orderdetails AS t1
+	INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber
+	WHERE status = 'shipped' AND t1.quantityOrdered &gt;50 AND t2.comments IS NOT NULL */
+	
+SELECT t1.orderNumber,t2.status,(quantityOrdered * priceEach) FROM orderdetails AS t1
+	INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber
+	WHERE status = 'shipped' AND t1.quantityOrdered &gt;50 AND t2.comments IS NOT NULL</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+/* SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA') */
+	
+/* SELECT * FROM products
+	INNER JOIN productlines ON products.productline = productlines.productLine */
+	
+/* SELECT t1.quantityOrdered,t1.priceEach,t2.status FROM orderdetails AS t1
+	INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber
+	WHERE status = 'shipped' AND t1.quantityOrdered &gt;50 AND t2.comments IS NOT NULL */
+	
+SELECT t1.orderNumber,t2.status,SUM(quantityOrdered * priceEach) FROM orderdetails AS t1
+	INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber
+	WHERE status = 'shipped' AND t1.quantityOrdered &gt;50 AND t2.comments IS NOT NULL</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+/* SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA') */
+	
+/* SELECT * FROM products
+	INNER JOIN productlines ON products.productline = productlines.productLine */
+	
+SELECT t1.quantityOrdered,t1.priceEach,t2.status FROM orderdetails AS t1
+	INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber
+	WHERE status = 'shipped' AND t1.quantityOrdered &gt;50 AND t2.comments IS NOT NULL</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+/* SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA') */
+	
+/* SELECT * FROM products
+	INNER JOIN productlines ON products.productline = productlines.productLine */
+	
+SELECT t1.quantityOrdered,t1.priceEach,t2.status FROM orderdetails AS t1
+	INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber
+	WHERE status = 'shipped' AND t1.quantityOrdered &gt;50 AND comment NOT NULL</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+/* SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA') */
+	
+/* SELECT * FROM products
+	INNER JOIN productlines ON products.productline = productlines.productLine */
+	
+SELECT t1.quantityOrdered,t1.priceEach,t2.status FROM orderdetails AS t1
+	INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber
+	WHERE status = 'shipped' AND t1.quantityOrdered &gt;50</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+/* SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA') */
+	
+/* SELECT * FROM products
+	INNER JOIN productlines ON products.productline = productlines.productLine */
+	
+SELECT t1.quantityOrdered,t1.pricEach,t2.status FROM orderdetails AS t1
+	INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber
+	WHERE status = 'shipped' AND t1.quantityOrdered &gt;50</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+/* SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA') */
+	
+/* SELECT * FROM products
+	INNER JOIN productlines ON products.productline = productlines.productLine */
+	
+SELECT * FROM orderdetails AS t1
+	INNER JOIN orders AS t2 ON t1.orderNumber = t2.orderNumber</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+/* SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA') */
+	
+/* SELECT * FROM products
+	INNER JOIN productlines ON products.productline = productlines.productLine */
+	
+SELECT * FROM orderdetails
+	INNER JOIN orders ON orderdetails.orderNumber = orders.orderNumber</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+/* SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA') */
+	
+SELECT * FROM products
+	INNER JOIN productlines ON products.productline = productlines.productLine</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+-- SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10
+
+SELECT * FROM customers WHERE state IN ('CA', 'NY', 'PA')</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+SELECT * FROM customers WHERE customerNumber &lt; 200 limit 19</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+/* SELECT DISTINCT lastname FROM employees;
+SELECT DISTINCT state, city FROM customers; */
+
+SELECT * FROM customers WHERE customerNumber &lt; 200 limit 10</string>
+		<string>SELECT DISTINCT state, city FROM customers</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+SELECT DISTINCT(lastname) FROM employees</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+SELECT * FROM employees</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+/* SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC */
+
+SELECT * FROM customers</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirstName DESC</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+/* 		
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%" */
+
+
+SELECT * FROM customers
+ 	WHERE customerName LIKE "%and%"
+ 	ORDER BY contactFirst Name DESC</string>
+		<string>/* CREATE TABLE students(
+	name varchar(255),
+	website varchar(255),
+	github_username varchar(255),
+	points integer,
+	gender char(1),
+	cohort_start_date date,
+	graduated boolean
+) */
+
+/* INSERT INTO students values
+	('Rob', 'rob.com', 'rbunch-dc', 10, 'm', '2016-10-28', FALSE) */
+		
+/* INSERT INTO students values
+	('Brett', 'brett.com', 'bb', 12, 'm', '2016-10-28', FALSE) */
+	
+-- SELECT * FROM students
+/* SELECT name, gender, grade FROM STUDENTS */
+
+/* ALTER TABLE students ADD ID int NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT */
+
+/* INSERT INTO students values
+	('JT', 'JT.com', 'jt', 5, 'm', '2016-10-28', FALSE, DEFAULT); */
+	
+/* SELECT * FROM customers 
+	WHERE state = 'ny' 
+		AND customerNumber &lt;= 200
+		AND customerName  = "Land of Toys Inc." */
+		
+SELECT * FROM customers
+	WHERE customerName LIKE "%and%"</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.7.15</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

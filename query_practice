@@ -1,0 +1,52 @@
+Get all rows from employee who are sales reps
+- SELECT * FROM employees WHERE jobTitle = 'Sales Rep'
+Get all rows who aren't sales reps in office 1. Return only name and email
+
+- SELECT firstName, lastName FROM employees 
+    WHERE jobTitle != 'Sales Rep' 
+    AND officeCode = 1
+
+Get a unique list of managers by pulling the reports to
+-    SELECT DISTINCT(reportsTo) FROM employees WHERE reportsTo IS NOT NULL;
+-- SELECT DISTINCT(reportsTo) FROM employees WHERE reportsTo != "";
+
+
+Get the name and office code of everyone who's name contains a "b"
+- SELECT firstName, lastName, officeCode FROM employees 
+    WHERE jobTitle LIKE "%manager%" 
+    AND lastName LIKE "%b%";
+...where the office code is 1,3 or 5
+... only managers
+- SELECT * FROM employees 
+    WHERE jobTitle LIKE "%manager%" 
+    AND lastName LIKE "%b%"
+    AND officeCode IN (1,3,5);
+OR
+- SELECT * FROM employees 
+    WHERE lastName LIKE "%b%"
+    AND (officeCode = 1 
+            OR officeCode = 3 
+            OR officeCode = 5);
+
+Pull the first 10 rows by customer name from customers
+... Only bring back name
+SELECT customerName FROM customers ORDER BY customerName LIMIT 10;
+
+Bring back all payments and the associated customer data
+- SELECT * FROM payments
+    INNER JOIN customers ON customers.customerNumber = payments.customerNumber
+… limit the results to those with an ammount above 1000
+- SELECT * FROM payments
+    INNER JOIN customers ON customers.customerNumber = payments.customerNumber
+    WHERE payments.amount > 1000
+        AND customers.customerNumber < 200
+
+Get the total of all order amounts where the customer number is 124 (and round)
+USE SUM!
+- SELECT ROUND(SUM(amount),1) FROM payments 
+    WHERE customerNumber = 124
+
+As a bonus, try and combine the results of customers, orders, and orderdtails into one resulting data
+-  SELECT * FROM customers AS t1
+    LEFT JOIN orders AS t2 ON t1.customerNumber = t2.customerNumber
+    LEFT JOIN orderdetails AS t3 ON t2.orderNumber = t3.orderNumber;
